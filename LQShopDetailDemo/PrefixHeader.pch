@@ -1,0 +1,25 @@
+//
+//  PrefixHeader.pch
+//  LQShopDetailDemo
+//
+//  Created by hhh on 2019/3/3.
+//  Copyright © 2019 LQ. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import <Masonry.h>
+
+#endif /* PrefixHeader_pch */
+
+#define WIDTH [UIScreen mainScreen].bounds.size.width
+#define HEIGHT [UIScreen mainScreen].bounds.size.height
+
+#define STATUSBAR_HEIGHT    ([UIApplication sharedApplication].statusBarFrame.size.height)
+
+#define NAVIGATION_BAR_HEIGHT   (STATUSBAR_HEIGHT + 44.f)
+
+#define FRAME(x,y,w,h)  CGRectMake(x,y,w,h)
